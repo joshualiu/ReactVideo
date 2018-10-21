@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import * as Secret from './secret.js';
@@ -29,9 +30,11 @@ class App extends Component {
   }
   
   render() {
+    const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 500);
+
     return (
       <div>
-        <SearchBar onSearchTermChange={ term => this.videoSearch(term) }/>
+        <SearchBar onSearchTermChange={ videoSearch }/>
         <VideoDetail video={ this.state.selectedVideo }/>
         <VideoList 
           onVideoSelect={ selectedVideo => this.setState({selectedVideo}) }
