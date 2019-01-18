@@ -1,25 +1,10 @@
-# ReactVideo 
+# ReactVideo Project
 
-Interested in learning [Redux](https://www.udemy.com/react-redux/)?
+ReactVideo is a YouTube browser application. User can enter search term in the search bar and the app will retrieve youtube video related to the term and play the first one. 
 
-### Getting Started
+The app is created with **ReactJS** with **YouTube Video API**, deployed on **Now**
 
-There are two methods for getting started with this repo.
+### Live Demo
 
-#### Familiar with Git?
-Checkout this repo, install dependencies, then start the gulp process with the following:
+You can check the live demo of this app [here](https://reactvideo-joshua.now.sh/)
 
-```
-> git clone https://github.com/StephenGrider/ReduxSimpleStarter.git
-> cd ReduxSimpleStarter
-> npm install
-> npm start
-```
-
-#### Not Familiar with Git?
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-> npm install
-> npm start
-```
